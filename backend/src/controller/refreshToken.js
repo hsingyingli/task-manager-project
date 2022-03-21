@@ -33,10 +33,6 @@ export async function refresh(req, res) {
       );
       res.send({accessToken});
     });
-
-
-
-
   } catch (error) {
     res.clearCookie('jwt');
     res.status(401).send({error: 'please auth'});

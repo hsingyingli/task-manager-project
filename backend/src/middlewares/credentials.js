@@ -1,0 +1,7 @@
+export default function credentials(req, res, next){
+  const origin = req.headers.origin;
+  if (origin === 'http://localhost:3000') {
+    res.set('Access-Control-Allow-Credentials', true)
+  }
+  next();
+}

@@ -41,3 +41,8 @@ export const Tasks = styled.div`
   grid-column-gap: 10px;
   grid-row-gap: 1em;
 `;
+
+export const Loading = styled.div`
+  background-color: ${props => props.theme.color.bgColor};
+
+`

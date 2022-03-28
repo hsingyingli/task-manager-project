@@ -3,7 +3,7 @@ import Card from '../../components/Home/card';
 import Input_panel from '../../components/UI/input_panel';
 import Popup from '../../components/UI/popup';
 import useAxiosPrivate from '../../hooks/useAxiosPrivate';
-import {Container, Info, Main, Tasks} from './../../styles/home';
+import {Container, Info, Main, Tasks, Loading} from './../../styles/home';
 
 export default function Home() {
   const [tasks, setTasks] = useState(null);
@@ -45,7 +45,7 @@ export default function Home() {
 
   }
   return (
-    loading ? <> loading </> : (
+    loading ? <Loading> loading </Loading> : (
     <Container>
       <Main>
         <Info>

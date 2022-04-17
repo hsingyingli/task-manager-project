@@ -24,7 +24,7 @@
 │       └── server.js
 └── frontend
      └── src
-         ├── api
+         ├── api 
          ├── components
          ├── context
          ├── hooks
@@ -33,6 +33,13 @@
          └── lib
 ```
 
+---
 ## Access Token and Refresh Token 
 - access token is stored in memory and expire in 30s 
 - refresh token is stored in http only cookie and expire in 30d
+
+---
+## Functionality 
+- create, detete, update tasks (description, progress)
+- login, register, persist login(refresh token has not expired),
+- theme 

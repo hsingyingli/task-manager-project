@@ -1,18 +1,17 @@
 import {useRef, useState, useEffect} from 'react';
 import useAuth from '../../hooks/useAuth';
 import {useLocation, useNavigate, Link} from 'react-router-dom';
-
 import loginAPI from '../../api/login';
-
 import {Container, SignInForm, ErrorMsg, Box} from '../../styles/signin';
 import Input_panel from '../../components/UI/input_panel';
 
+
 export default function SignIn() {
-  {/*------ HOOKS -------*/}
+  /*------ HOOKS -------*/
   const {setAuth} = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
-  {/*--------------------*/}
+  /*--------------------*/
 
   const from = location.state?.from.pathname || '/';
   const emailRef = useRef();

@@ -5,8 +5,7 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import 'dotenv/config';
 
-const userSchema = new mongoose.Schema(
-  {
+const userSchema = new mongoose.Schema( {
     name: {
       type: String,
       require: true,

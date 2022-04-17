@@ -58,6 +58,7 @@ export default function Register() {
     try {
       const res = await signUpAPI({user, email, pwd})
       setAuth({user: res.data.user, accessToken: res.data.accessToken});
+      localStorage.setItem('username', res.data.user.name)
       navigate('/', {replace: true});
     } catch (error) {
       console.log(error)
